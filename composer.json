@@ -20,7 +20,7 @@
             "name": "BSCheshir",
             "email": "bscheshir.work@gmail.com",
             "role": "Contributor"
-        },
+        }
     ],
     "support": {
         "issues": "https://github.com/machour/yii2-google-apiclient/issues",
