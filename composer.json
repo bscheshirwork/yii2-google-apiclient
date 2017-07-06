@@ -1,7 +1,7 @@
 {
-    "name": "machour/yii2-google-apiclient",
+    "name": "bscheshirwork/yii2-google-apiclient",
     "description": "A Yii2 wrapper for the official Google API PHP Client",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "type": "yii2-extension",
     "keywords": [
         "yii2",
@@ -15,7 +15,12 @@
             "name": "Mehdi Achour",
             "email": "machour@gmail.com",
             "role": "Creator"
-        }
+        },
+        {
+            "name": "BSCheshir",
+            "email": "bscheshir.work@gmail.com",
+            "role": "Contributor"
+        },
     ],
     "support": {
         "issues": "https://github.com/machour/yii2-google-apiclient/issues",
@@ -23,11 +28,11 @@
     },
     "require": {
         "yiisoft/yii2": "~2",
-        "google/apiclient": "1.*" 
+        "google/apiclient": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "machour\\yii2\\google\\apiclient\\": ""
+            "bscheshirwork\\yii2\\google\\apiclient\\": ""
         }
     }
 }
