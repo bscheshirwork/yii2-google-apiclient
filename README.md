@@ -13,13 +13,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist machour/yii2-google-apiclient "*"
+php composer.phar require --prefer-dist bscheshirwork/yii2-google-apiclient "*"
 ```
 
 or add
 
 ```
-"machour/yii2-google-apiclient": "*"
+"bscheshirwork/yii2-google-apiclient": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -40,7 +40,7 @@ You can generate this file using the provided console utility:
 'bootstrap' => ['log', 'google_apiclient'],
 'modules' => [
     'google_apiclient' => [
-        'class' => 'machour\yii2\google\apiclient\Module',
+        'class' => 'bscheshirwork\yii2\google\apiclient\Module',
     ],
 ],
 ```
@@ -63,7 +63,7 @@ Here's how to setup GMail for example, a usage sample is provided below.
     'components' => [
         // ..
         'gmail' => [
-            'class' => 'machour\yii2\google\apiclient\components\GoogleApiClient',
+            'class' => 'bscheshirwork\yii2\google\apiclient\components\GoogleApiClient',
             'credentialsPath' => '@runtime/google-apiclient/auth.json',
             'clientSecretPath' => '@runtime/google-apiclient/gmail.json',
             'api' => Google_Service_Gmail::class,
