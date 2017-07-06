@@ -1,6 +1,6 @@
 <?php
 
-namespace machour\yii2\google\apiclient\commands;
+namespace bscheshirwork\yii2\google\apiclient\commands;
 
 use Google_Auth_Exception;
 use Google_Client;
@@ -21,7 +21,7 @@ class GoogleController extends Controller
     /**
      * Google API discovery backend
      */
-    const DISCOVERY_URL = 'https://www.googleapis.com/discovery/v1/apis';
+    const DISCOVERY_URL = 'https://www.googleapis.com/discovery/v2/apis';
 
     /**
      * @var array Api cache for the {getApis} getter
