@@ -21,7 +21,7 @@ class GoogleController extends Controller
     /**
      * Google API discovery backend
      */
-    const DISCOVERY_URL = 'https://www.googleapis.com/discovery/v2/apis';
+    const DISCOVERY_URL = 'https://www.googleapis.com/discovery/v1/apis';
 
     /**
      * @var array Api cache for the {getApis} getter
@@ -224,8 +224,8 @@ class GoogleController extends Controller
         if (!is_dir(dirname($credentialsPath))) {
             mkdir(dirname($credentialsPath), 0700, true);
         }
-        /** @var string $accessToken */
-        file_put_contents($credentialsPath, $accessToken);
+        /** @var array $accessToken */
+        file_put_contents($credentialsPath, json_encode($accessToken));
 
         return $credentialsPath;
 
