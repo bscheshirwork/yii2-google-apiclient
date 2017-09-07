@@ -1,6 +1,6 @@
 <?php
 
-namespace machour\yii2\google\apiclient\components;
+namespace bscheshirwork\yii2\google\apiclient\components;
 
 use Google_Client;
 use Yii;
