@@ -97,10 +97,10 @@ class GoogleApiClient extends Component
     /**
      * Writes down the access token in the credentials file.
      *
-     * @param $access_token string the access token
+     * @param $access_token array the access token
      */
     private function saveAccessToken($access_token) {
-        file_put_contents($this->credentialsPath, $access_token);
+        file_put_contents($this->credentialsPath, json_encode($access_token));
     }
 
     /**
