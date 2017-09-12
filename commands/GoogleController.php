@@ -200,6 +200,7 @@ class GoogleController extends Controller
         $client = new Google_Client();
         $client->setAuthConfigFile($this->clientSecretPath);
         $client->setAccessType('offline');
+        $client->setApprovalPrompt('force');
         $client->setScopes(implode(' ', $scopes));
 
         // Request authorization from the user.
